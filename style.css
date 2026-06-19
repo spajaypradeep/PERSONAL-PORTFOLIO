@@ -61,7 +61,7 @@ h1 {
     border: 2px solid #000000;
 }
 .hero-bio {
-    font-family: Arial, sans-serif; /* Cleaner font for reading paragraphs */
+    font-family: Arial, sans-serif; /
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 30px;
@@ -82,7 +82,7 @@ h1 {
     transition: all 0.1s ease;
 }
 .primary-btn{
-    background: #fbbf24; /* Amber Yellow */
+    background: #fbbf24;
 }
 
 .secondary-btn {
@@ -99,22 +99,19 @@ h1 {
 
 .section-title {
     font-size: 2.5rem;
-    background: #fbbf24; /* Amber Yellow background for the heading */
+    background: #fbbf24; 
     display: inline-block;
     padding: 10px 20px;
     border: 4px solid #000000;
     box-shadow: 4px 4px 0px #000000;
     margin-bottom: 30px;
 }
-
-/* The Layout Grid */
 .projects-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Creates 2 equal columns side-by-side */
-    gap: 20px; /* Space between the cards */
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
 }
 
-/* Individual Project Cards */
 .project-card {
     background: #ffffff;
     border: 4px solid #000000;
@@ -122,13 +119,13 @@ h1 {
     box-shadow: 6px 6px 0px #000000;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Pushes links to the bottom of the card */
+    justify-content: space-between; 
 }
 
 .project-tag {
     display: inline-block;
-    align-self: flex-start; /* Keeps the tag small instead of stretching it */
-    background: #c084fc; /* Bright Purple */
+    align-self: flex-start; 
+    background: #c084fc;
     border: 2px solid #000000;
     font-size: 0.8rem;
     padding: 3px 8px;
@@ -156,16 +153,15 @@ h1 {
     color: #000000;
     text-decoration: none;
     font-weight: bold;
-    border-bottom: 2px solid #000000; /* Custom underline look */
+    border-bottom: 2px solid #000000; 
 }
 
 .project-link:hover {
-    background: #a3e635; /* Highlights green on hover */
+    background: #a3e635; 
 }
-/* 6. CONTACT SECTION */
 .contact-section {
     max-width: 800px;
-    margin: 100px auto 100px auto; /* Strong spacing all around */
+    margin: 100px auto 100px auto; 
 }
 
 .contact-box {
@@ -183,10 +179,9 @@ h1 {
     line-height: 1.4;
 }
 
-/* Form Layout */
 .contact-form {
     display: flex;
-    flex-direction: column; /* Stacks the inputs vertically */
+    flex-direction: column; 
 }
 
 .contact-form label {
@@ -194,7 +189,6 @@ h1 {
     margin-bottom: 8px;
 }
 
-/* Styling Inputs & Textarea */
 .contact-form input, 
 .contact-form textarea {
     font-family: Arial, sans-serif;
@@ -204,26 +198,21 @@ h1 {
     border: 3px solid #000000;
     margin-bottom: 20px;
     background: #fdfaf6;
-    outline: none; /* Removes default browser blue glow on click */
+    outline: none; 
 }
-
-/* Focus effect when user clicks into an input box */
 .contact-form input:focus, 
 .contact-form textarea:focus {
-    background: #38bdf8; /* Turns Sky Blue when clicked! */
-}
+    background: #38bdf8;
 
 .form-submit {
     cursor: pointer;
-    align-self: flex-start; /* Keeps the button from stretching fully widthwise */
+    align-self: flex-start;
 }
 /* 7. DARK MODE STYLES */
 body.dark-theme {
-    background-color: #121212; /* Dark Charcoal */
-    color: #ffffff; /* White text */
+    background-color: #121212; 
+    color: #ffffff; 
 }
-
-/* Change the white boxes to dark gray boxes when dark mode is active */
 body.dark-theme .hero-section,
 body.dark-theme .project-card,
 body.dark-theme .contact-box,
@@ -234,24 +223,21 @@ body.dark-theme textarea {
     background: #1e1e1e;
     text-decoration-color: #f0ebe1;
     color: #ffffff;
-    border-color: #ffffff; /* Turns borders white for high contrast! */
-    box-shadow: 6px 6px 0px ; /* White hard shadow */
+    border-color: #ffffff;
+    box-shadow: 6px 6px 0px ; 
 }
 
-/* Update buttons and navbar shadow in dark mode */
 body.dark-theme .navbar,
 body.dark-theme .primary-btn,
 body.dark-theme .section-title {
     box-shadow: 5px 5px 0px #ffffff;
     border-color: #ffffff;
-    color: #000000; /* Keeps text dark inside bright elements */
+    color: #000000;
 }
-/* A stronger rule to force the text color to change */
 body.dark-theme .project-card p {
     color: #ffffff !important;
     border-color: #ffffff;
 }
-/* Force the project links to turn white and get a white underline in dark mode */
 body.dark-theme .project-card .project-link {
     color: #ffffff !important;
     border-color: #ffffff !important;
