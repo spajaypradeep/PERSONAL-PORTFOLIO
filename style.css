@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Black', 'Impact', sans-serif;
+}
+body{
+    background-color: #f0ebe1;
+    color: #000000;
+    padding: 20px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #a3e635;
+    border: 4px solid #000000;
+    padding: 15px 25px;
+    box-shadow: 5px 5px 0px #000000;
+    margin-bottom: 40px;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.nav-links a{
+    color: #000000;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+.nav-links a:hover{
+    text-decoration: underline 2px ;
+}
+.hero-section{
+    background: #fff;
+    border: 4px solid #000000;
+    padding:40px;
+    box-shadow: 8px 8px 0px #000000;
+    max-width: 800px;
+    margin: 40px auto 60px auto;
+}
+.hero-badge{
+    display: inline-block;
+    background: #f43f5e;
+    color: white;
+    padding: 5px 10px;
+    border: 2px solid #000000;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    transform: rotate(-5deg)
+}
+h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+.highlight {
+    background: #38bdf8;
+    padding: 0 5px;
+    border: 2px solid #000000;
+}
+.hero-bio {
+    font-family: Arial, sans-serif; /* Cleaner font for reading paragraphs */
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    border: 3px solid #000000;
+    box-shadow: 4px 4px 0px #000000;
+    transition: all 0.1s ease;
+}
+.primary-btn{
+    background: #fbbf24; /* Amber Yellow */
+}
+
+.secondary-btn {
+    background: #ffffff;
+}
+.btn:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #000000;
+}
+.projects-section {
+    max-width: 800px;
+    margin: 80px auto 0 auto; 
+}
+
+.section-title {
+    font-size: 2.5rem;
+    background: #fbbf24; /* Amber Yellow background for the heading */
+    display: inline-block;
+    padding: 10px 20px;
+    border: 4px solid #000000;
+    box-shadow: 4px 4px 0px #000000;
+    margin-bottom: 30px;
+}
+
+/* The Layout Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates 2 equal columns side-by-side */
+    gap: 20px; /* Space between the cards */
+}
+
+/* Individual Project Cards */
+.project-card {
+    background: #ffffff;
+    border: 4px solid #000000;
+    padding: 25px;
+    box-shadow: 6px 6px 0px #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes links to the bottom of the card */
+}
+
+.project-tag {
+    display: inline-block;
+    align-self: flex-start; /* Keeps the tag small instead of stretching it */
+    background: #c084fc; /* Bright Purple */
+    border: 2px solid #000000;
+    font-size: 0.8rem;
+    padding: 3px 8px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #333333;
+    margin-bottom: 20px;
+}
+.project-links {
+    display: flex;
+    gap: 15px;
+}
+
+.project-link {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid #000000; /* Custom underline look */
+}
+
+.project-link:hover {
+    background: #a3e635; /* Highlights green on hover */
+}
+/* 6. CONTACT SECTION */
+.contact-section {
+    max-width: 800px;
+    margin: 100px auto 100px auto; /* Strong spacing all around */
+}
+
+.contact-box {
+    background: #ffffff;
+    border: 4px solid #000000;
+    padding: 30px;
+    box-shadow: 8px 8px 0px #000000;
+}
+
+.contact-box p {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+/* Form Layout */
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Stacks the inputs vertically */
+}
+
+.contact-form label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+/* Styling Inputs & Textarea */
+.contact-form input, 
+.contact-form textarea {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px;
+    border: 3px solid #000000;
+    margin-bottom: 20px;
+    background: #fdfaf6;
+    outline: none; /* Removes default browser blue glow on click */
+}
+
+/* Focus effect when user clicks into an input box */
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    background: #38bdf8; /* Turns Sky Blue when clicked! */
+}
+
+.form-submit {
+    cursor: pointer;
+    align-self: flex-start; /* Keeps the button from stretching fully widthwise */
+}
+/* 7. DARK MODE STYLES */
+body.dark-theme {
+    background-color: #121212; /* Dark Charcoal */
+    color: #ffffff; /* White text */
+}
+
+/* Change the white boxes to dark gray boxes when dark mode is active */
+body.dark-theme .hero-section,
+body.dark-theme .project-card,
+body.dark-theme .contact-box,
+body.dark-theme .secondary-btn,
+body.dark-theme .project-link,
+body.dark-theme input,
+body.dark-theme textarea {
+    background: #1e1e1e;
+    text-decoration-color: #f0ebe1;
+    color: #ffffff;
+    border-color: #ffffff; /* Turns borders white for high contrast! */
+    box-shadow: 6px 6px 0px ; /* White hard shadow */
+}
+
+/* Update buttons and navbar shadow in dark mode */
+body.dark-theme .navbar,
+body.dark-theme .primary-btn,
+body.dark-theme .section-title {
+    box-shadow: 5px 5px 0px #ffffff;
+    border-color: #ffffff;
+    color: #000000; /* Keeps text dark inside bright elements */
+}
+/* A stronger rule to force the text color to change */
+body.dark-theme .project-card p {
+    color: #ffffff !important;
+    border-color: #ffffff;
+}
+/* Force the project links to turn white and get a white underline in dark mode */
+body.dark-theme .project-card .project-link {
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+}

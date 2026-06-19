@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>protfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">AJAY | DEV</div>
+        <div class="nav-links">
+            <a href="#">ABOUT</a>
+            <a href="#">CREATURES</a>
+            <a href="#">CONTACT</a>
+            <button id="toggle"> ⚡ MODE</button>
+        </div>
+    </nav>
+
+    <header id="about" class="hero-section">
+        <div class="hero-badge">12TH BOARD GRADUATE !</div>
+        <h1>HEY I'M <span class="highlight">AJAY PRADEEP</span>.</h1>
+        <p class="hero-bio">
+            Fresh out of high school with top marks, turning academic discipline into clean, powerful code. Welcome to my digital space.
+        </p>
+        <div class="hero-buttons">
+            <a href="#" class="btn primary-btn">VIEW MY WORK</a>
+            <a href="#" class="btn secondary-btn">LET'S CHAT</a>
+        </div>
+    </header>
+
+   <section id="projects" class="projects-section">
+        <h2 class="section-title">MY PROJECTS</h2>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-tag">HTML & CSS</div>
+                <h3>Neo-Brutalist Portfolio</h3>
+                <p>My official personal website built from scratch to showcase my coding journey right after my 12th board exams.</p>
+                <div class="project-links">
+                    <a href="#" class="project-link">Live Demo ↗</a>
+                    <a href="#" class="project-link">GitHub 💾</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-tag">JavaScript</div>
+                <h3>Interactive Web App</h3>
+                <p>Coming soon! A dynamic web application that will fetch live data from a public API to showcase logic and state handling.</p>
+                <div class="project-links">
+                    <a href="#" class="project-link">Building... 🛠️</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">LET'S CONNECT</h2>
+        <div class="contact-box">
+            <p>I am currently open to collaborations, open-source projects, or just chatting about web development. Drop me a line!</p>
+            
+            <form class="contact-form">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Type your name here..." required>
+                
+                <label for="email">Your Email</label>
+                <input type="email" id="email" placeholder="Type your email here..." required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" placeholder="Say hello!..." required></textarea>
+                
+                <button type="submit" class="btn btn-primary form-submit">Send Message 🚀</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
